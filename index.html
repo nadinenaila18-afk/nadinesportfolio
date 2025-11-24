@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scrapbook Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="nav-tab">HOME</a>
+        <a href="#about" class="nav-tab">ABOUT</a>
+        <a href="#work" class="nav-tab">WORK</a>
+        <a href="#contact" class="nav-tab">CONTACT</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="scrapbook-cover">
+            <div class="tape tape-1"></div>
+            <div class="tape tape-2"></div>
+            <div class="tape tape-3"></div>
+            <div class="tape tape-4"></div>
+            
+            <h1 class="hero-title">
+                <span class="title-cutout cutout-6">NADINE</span>
+                <span class="title-cutout cutout-4">NAILA</span>
+            </h1>
+            <p class="hero-subtitle">A Portfolio Journey</p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="journal-page">
+            <h2 class="section-title">MY STORY</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to my creative scrapbook! I'm a designer and developer who believes in making bold statements through art.</p>
+                    <br>
+                    <p>Each project is a new page in my journey, filled with experiments, discoveries, and passionate creations. I collect 
+                        inspiration like memories and transform them into digital experiences.</p>
+                    <br>
+                    <p>My work combines raw creativity with technical skill, always pushing boundaries and exploring new possibilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <h2 class="section-title" style="text-align: center;">MY COLLECTION</h2>
+        <div class="collage-grid">
+            <div class="collage-item" onclick="openModal('modal1')">
+                <div class="collage-content one" style=""> <img src="img/asset2.png"></div>
+                <p class="collage-caption">Branding & Packaging<br>Sprout</p>
+                
+            </div>
+
+            <div class="collage-item" onclick="openModal('modal2')">
+                <div class="collage-content two"> <img src="img/publication.png"></div>
+                <p class="collage-caption" style="color: rgb(0, 76, 4);">publication Design<br>Magazine</p>
+            </div>
+
+            <div class="collage-item" onclick="openModal('modal3')">
+                <div class="collage-content three"> <img src="img/theycalleditsummer2.png"></div>
+                <p class="collage-caption"  style="color: #ffffff;"> Motion Graphics<br>Tv Series Intro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Windows -->
+    <div class="modal" id="modal1" onclick="closeModal('modal1')">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('modal1')">×</button>
+            <img src="img/sproutpairone.png" alt="Project Alpha" class="modal-image">
+            <div class="modal-caption">
+                <div class="modal-title">Branding & Packaging</div>
+                <div class="modal-category">Sprout</div>
+                <div class="modal-description">A complete brand identity for a product. This project included logo design, color palette development, typography selection, and brand guidelines.</div>
+                <span class="btn" type="button" style="font-size: large;" onclick="window.open('files/sprout.pdf', '_blank')">
+                Tap for a glimpse
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" onclick="closeModal('modal2')">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('modal2')">×</button>
+            
+            <img src="img/page.png" alt="Project Gamma" class="modal-image">
+            
+            <div class="modal-caption">
+                <div class="modal-title">publication design</div>
+                <div class="modal-category">Magazine </div>
+                <div class="modal-description">A complete magazine design project. This included developing the editorial layout, selecting typography, creating a cohesive visual style, and producing final print-ready pages.</div>
+                
+                   <style>
+                  .btn {
+                        background-color: #fef5d7 !important;
+                        border-color: #fef5d7 !important;
+                       }
+                  .btn:hover {
+                         background-color: #fae18f !important;
+                         border-color: #fae18f !important;
+                       }
+                  </style>
+
+                <span class="btn" type="button" style="font-size: large;" onclick="window.open('files/MAG.pdf', '_blank')">
+                Tap for a glimpse
+                </span>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3" onclick="closeModal('modal3')">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal('modal3')">×</button>
+
+            <img src="img/theycalleditsummer.png" alt="Project Gamma" class="modal-image">
+            <div class="modal-caption">
+                <div class="modal-title">Motion Graphics</div>
+                <div class="modal-category">Tv Series Intro</div>
+                <div class="modal-description">Led the creative vision for a multimedia campaign. Coordinated photography, video production, and digital content to create a cohesive brand story.</div>
+                <a href="videos/theycalleditsummer.mp4" target="_blank" class="btn" type="button" style="font-size: large; color: black;">Tap for a glimpse</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="contact-title">LET'S CONNECT</h2>
+        <div class="postit-grid">
+            <a href="mailto:nadinenaila18@gmail.com" class="postit">
+                <div class="postit-title">EMAIL</div>
+                <div class="postit-text">Drop me a line</div>
+            </a>
+
+            <a href="#" class="postit">
+                <div class="postit-title">PHONE NUMBER</div>
+                <div class="postit-text">+256 0709206060</div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: xx-large; font-weight: 500;"> Portfolio complete. Coffee consumed.</p>
+        <p style="font-size: xx-large; font-weight: 500;"> That’s all, folks… unless we work together. Then there’s more</p>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal.active').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
